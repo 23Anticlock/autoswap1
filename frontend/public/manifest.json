@@ -1,0 +1,26 @@
+{
+  "short_name": "AutoSwap",
+  "name": "AutoSwap — Binance Automation",
+  "description": "Automate your Binance crypto trading and P2P selling",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090f",
+  "theme_color": "#f0b90b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["finance", "utilities"]
+}
