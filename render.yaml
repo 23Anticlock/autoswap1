@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: autoswap-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+
+    # Health check
+    healthCheckPath: /api/health
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000          # Render assigns this automatically
+      - key: JWT_SECRET
+        generateValue: true   # Render auto-generates a secure random value
+      - key: ALLOWED_ORIGINS
+        value: https://YOUR-APP.netlify.app  # ← update after Netlify deploy
